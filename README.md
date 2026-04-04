@@ -1,11 +1,7 @@
 <div align="center">
   <img src="./public/assets/banner.png" alt="Project Banner" width="100%" />
   
-  <br /><br />
-  
   <h1>Fidelity</h1>
-  
-  <p><strong>Blazing-fast developer tools for building high-performance real-time communication systems.</strong></p>
   
   <p>
     <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" /></a>
