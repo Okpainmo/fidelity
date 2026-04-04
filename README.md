@@ -37,7 +37,7 @@ Fidelity aims to provide a reliable foundation for building crypto-enabled appli
 
 ## Want To Contribute?
 
-We welcome external contributions on the Fidelity project. But due to [our restrictive license](./LICENSE.MD), that process comes with some caveats. Kindly read our [contributor agreement](./CONTRIBUTOR_AGREEMENT.md) to learn more.
+We welcome external contributions on the Fidelity project. But due to [our restrictive license](./LICENSE.md), that process comes with some caveats. Kindly read our [contributor agreement](./CONTRIBUTOR_AGREEMENT.md) to learn more.
 
 ---
 
