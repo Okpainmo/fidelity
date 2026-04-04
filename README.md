@@ -3,6 +3,8 @@
   
   <h1>Fidelity</h1>
   
+  <p><strong>Bridging the chain divide with institutional-grade wallet infrastructure.</strong></p>
+  
   <p>
     <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" /></a>
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
