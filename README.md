@@ -1,10 +1,18 @@
-![Project Banner](./public/assets/banner.png)
-
-[![Rust](https://img.shields.io/badge/language-rust-orange?style=flat-square)](https://www.rust-lang.org/)
-[![TypeScript](https://img.shields.io/badge/language-typescript-blue?style=flat-square)](https://www.typescriptlang.org/)
-[![Pre-Release](https://img.shields.io/badge/status-pre--release-yellow?style=flat-square)](#)
-
-## Fidelity
+<div align="center">
+  <img src="./public/assets/banner.png" alt="Project Banner" width="100%" />
+  
+  <br /><br />
+  
+  <h1>Fidelity</h1>
+  
+  <p><strong>Blazing-fast developer tools for building high-performance real-time communication systems.</strong></p>
+  
+  <p>
+    <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" /></a>
+    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+    <img src="https://img.shields.io/badge/Status-Pre--release-orange?style=for-the-badge" alt="Status" />
+  </p>
+</div>
 
 **Fidelity** is a multi-chain cryptocurrency wallet platform designed to provide complete infrastructure for issuing and managing blockchain wallets at scale. The project includes the backend systems required to interact with blockchains as well as the client applications to be used for accessing and managing wallets.
 
