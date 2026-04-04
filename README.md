@@ -8,8 +8,7 @@
   <p>
     <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" /></a>
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
-      <img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-555555?style=for-the-badge&logo=creativecommons&logoColor=white" alt="CC BY-NC-ND 4.0 License" />
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-555555?style=for-the-badge&logo=creativecommons&logoColor=white" alt="CC BY-NC-ND 4.0 License" />
     </a>
     <img src="https://img.shields.io/badge/Status-Pre--release-orange?style=for-the-badge" alt="Status" />
   </p>
