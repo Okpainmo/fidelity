@@ -4,8 +4,9 @@ Thank you for considering contributing to **Fidelity**. By submitting code, docu
 
 ## 1. License of Contributions
 
-- You agree that your Contributions will be licensed under the **Research / Academic Use Only License** of this project.  
-- This means your Contributions are **strictly for academic, educational, or research purposes**, and cannot be:  
+- You grant the Fidelity team the full right to accept, integrate, and use your contributions freely and without any restrictions.
+- You agree that your Contributions will be licensed under the **Research/Academic Use Only License** of this project.  
+- This means your Contributions(except within the Fidelity project/organization) are **strictly for academic, educational, or research purposes**, and cannot be:  
   - Used commercially,  
   - Copied into other projects, or  
   - Redistributed outside academic or research contexts.
@@ -24,4 +25,4 @@ Thank you for considering contributing to **Fidelity**. By submitting code, docu
 
 By submitting a pull request, issue, or any Contribution, you agree to these terms.  
 
-Thank you for helping improve **Fidelity** while keeping the project aligned with its academic and research mission.
+Thank you for helping improve **Fidelity**.
