@@ -1,4 +1,4 @@
-# Contributor Agreement – Research / Academic Use Only
+# Contributor Agreement
 
 Thank you for considering contributing to **Fidelity**. By submitting code, documentation, or any other material(“Contributions”) to this repository, you agree to the following terms as [described in our license](./LICENSE.md):
 
@@ -10,6 +10,8 @@ Thank you for considering contributing to **Fidelity**. By submitting code, docu
   - Used commercially,  
   - Copied into other projects, or  
   - Redistributed outside academic or research contexts.
+
+> Of course, none of these terms restricts you from quoting, sharing, or showing details about your contributions to the project in valid instances like applying for a job, or an academic placement. We value and appreciate you contributions, please feel free to do so comfortably.
 
 ## 2. Originality
 
