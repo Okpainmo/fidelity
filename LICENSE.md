@@ -6,7 +6,7 @@
 
 # Research / Academic Use Only License
 
-**Copyright (c) [2026] [Fidelity]**
+**Copyright (c) 2026 Fidelity**
 
 This code is provided strictly for **academic, educational, and research purposes**. By using this code, you agree to the following terms:
 
