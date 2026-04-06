@@ -1,4 +1,4 @@
-# The Krabby Project Pull Request Template/Guide
+# Fidelity Pull Request Template/Guide
 
 ## Section 1: PR Title
 
