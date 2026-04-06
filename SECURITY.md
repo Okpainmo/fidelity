@@ -23,7 +23,7 @@ The `main` branch may contain unstable or experimental changes and should not be
 
 Security is a top priority for Fidelity. If you discover a vulnerability, please report it privately via:
 
-📧 [okpainmoandrew@gmail.com](mailto:[okpainmoandrew@gmail.com])
+📧 [okpainmoandrew@gmail.com](mailto:okpainmoandrew@gmail.com)
 
 Please include:
 
