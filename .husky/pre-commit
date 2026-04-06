@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# run lint-staged
+bunx --no -- lint-staged
+
+# Run lint-staged on the Next.js(raw chat api integrations demo) app
+# (cd clients/fidelity-nextjs && bunx lint-staged)
+
+# Run lint on the React Native(raw chat api integrations demo) app
+# (cd clients/fidelity-rn && bun run lint)
