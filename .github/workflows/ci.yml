@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build + Static Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.6
+
+      - name: Install Root Dependencies
+        run: bun install
+
+      - name: Install Web App Dependencies
+        run: bun install
+        working-directory: clients/fidelity-nextjs
+
+      - name: Check Web Formatting
+        run: bun run format:check
+        working-directory: clients/fidelity-nextjs
+
+      - name: Run Web Linter
+        run: bun run lint
+        working-directory: clients/fidelity-nextjs
+
+      - name: Build Next.js App
+        run: bun run build
+        working-directory: clients/fidelity-nextjs
+
+      - name: Install Mobile App Dependencies
+        run: bun install
+        working-directory: clients/fidelity-rn
+
+      - name: Run Mobile Linter
+        run: bun run lint
+        working-directory: clients/fidelity-rn
+
+      - name: Check Mobile Types
+        run: bunx tsc --noEmit
+        working-directory: clients/fidelity-rn
