@@ -12,8 +12,8 @@ export default defineConfig([
     'out/**',
     'build/**',
     'next-env.d.ts',
-    'node_modules/*',
-    'coverage/*',
+    'node_modules/**',
+    'coverage/**',
   ]),
 
   {
@@ -22,8 +22,8 @@ export default defineConfig([
       'out/**',
       'build/**',
       'next-env.d.ts',
-      'node_modules/*',
-      'coverage/*',
+      'node_modules/**',
+      'coverage/**',
       // Ignore config files to prevent react plugin crashes
       'next.config.js',
       'next.config.ts',

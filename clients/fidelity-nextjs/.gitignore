@@ -31,9 +31,14 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files 
-.env.development
-.env.staging
-.env.production
+.env
+.env.*
+!.env.sample
+!.env.*.sample
+!.env.example
+
+# eslint
+.eslintcache
 
 # vercel
 .vercel
