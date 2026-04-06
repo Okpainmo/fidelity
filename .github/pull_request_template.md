@@ -84,5 +84,5 @@ Add relevant output, logs, or screenshots where helpful.
 - [ ] No new warnings introduced
 - [ ] Documentation updated (if required)
 - [ ] Conventional Commit format used for PR title
-- [ ] Branch named according to CONTRIBUTING.md (e.g. <preferred_code_name>\_dev)
+- [ ] Branch named according to CONTRIBUTING.md (e.g. `preferred_code_name_dev`)
 - [ ] CI passes
