@@ -10,7 +10,10 @@
     "android": "bunx expo start --android",
     "ios": "bunx expo start --ios",
     "web": "bunx expo start --web",
-    "lint": "bunx expo lint"
+    "lint": "bunx expo lint",
+    "tsc": "tsc",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
