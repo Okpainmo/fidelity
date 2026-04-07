@@ -40,26 +40,31 @@ interface AuthState {
 }
 
 // Helper to load initial state from localStorage safely
-const getInitialUser = (): UserProfile | null => {
-  if (typeof window !== 'undefined') {
-    const saved = localStorage.getItem('userData');
-    try {
-      return saved ? JSON.parse(saved) : null;
-    } catch (e) {
-      console.error(e);
+// const getInitialUser = (): UserProfile | null => {
+//   if (typeof window !== 'undefined') {
+//     const saved = localStorage.getItem('userData');
+//     try {
+//       return saved ? JSON.parse(saved) : null;
+//     } catch (e) {
+//       console.error(e);
 
-      return null;
-    }
-  }
-  return null;
-};
+//       return null;
+//     }
+//   }
+//   return null;
+// };
 
 const initialState: AuthState = {
-  user: getInitialUser(),
-  accessToken: typeof window !== 'undefined' ? localStorage.getItem('accessToken') : null,
+  // user: getInitialUser(),
+  // accessToken: typeof window !== 'undefined' ? localStorage.getItem('accessToken') : null,
+  // isLoading: false,
+  // error: null,
+  // isAuthenticated: typeof window !== 'undefined' ? !!localStorage.getItem('accessToken') : false,
+  user: null,
+  accessToken: null,
   isLoading: false,
   error: null,
-  isAuthenticated: typeof window !== 'undefined' ? !!localStorage.getItem('accessToken') : false,
+  isAuthenticated: false,
 };
 
 // ----------------------------------------------------------------
@@ -85,7 +90,6 @@ export const handleLogin = createAsyncThunk<
     const { user_profile, access_token } = data.response;
 
     if (typeof window !== 'undefined') {
-      localStorage.setItem('email', user_profile.email);
       localStorage.setItem('accessToken', access_token);
       localStorage.setItem('userData', JSON.stringify(user_profile));
     }
@@ -128,7 +132,6 @@ export const handleRegister = createAsyncThunk<
     const { user_profile, access_token } = data.response;
 
     if (typeof window !== 'undefined') {
-      localStorage.setItem('email', user_profile.email);
       localStorage.setItem('accessToken', access_token);
       localStorage.setItem('userData', JSON.stringify(user_profile));
     }
@@ -153,15 +156,16 @@ export const handleLogout = createAsyncThunk<void, void, { rejectValue: string }
   'auth/logout',
   async (_, { rejectWithValue }) => {
     try {
-      const email = typeof window !== 'undefined' ? localStorage.getItem('email') : null;
-
-      if (email) {
-        await axiosInstance.post(`/auth/logout`, { user_email: email });
-      }
-
       if (typeof window !== 'undefined') {
+        const userData = localStorage.getItem('userData');
+        // console.log(userData);
+
+        if (userData) {
+          const user = JSON.parse(userData);
+          await axiosInstance.post(`/auth/logout`, { user_email: user.email });
+        }
+
         localStorage.removeItem('accessToken');
-        localStorage.removeItem('email');
         localStorage.removeItem('accessTokenSetTime');
         localStorage.removeItem('userData');
       }
@@ -171,7 +175,6 @@ export const handleLogout = createAsyncThunk<void, void, { rejectValue: string }
       // Even if backend fails, we ensure local cleanup for user logout safety
       if (typeof window !== 'undefined') {
         localStorage.removeItem('accessToken');
-        localStorage.removeItem('email');
         localStorage.removeItem('accessTokenSetTime');
         localStorage.removeItem('userData');
       }
@@ -226,6 +229,10 @@ const authSlice = createSlice({
         state.error = action.payload || 'Registration failed';
       })
       // Logout
+      .addCase(handleLogout.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
       .addCase(handleLogout.fulfilled, (state) => {
         state.user = null;
         state.accessToken = null;

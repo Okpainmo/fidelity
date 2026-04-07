@@ -1,4 +1,3 @@
-'use client';
 import axios, { AxiosError, InternalAxiosRequestConfig, AxiosResponse } from 'axios';
 import { accessTokenRefresher } from '@/app/utils/accessTokenRefresher';
 

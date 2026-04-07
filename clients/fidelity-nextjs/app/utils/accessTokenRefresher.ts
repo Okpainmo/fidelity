@@ -6,6 +6,6 @@ export function accessTokenRefresher(accessToken: string) {
     localStorage.setItem('accessToken', accessToken);
     localStorage.setItem('accessTokenSetTime', `${currentTimeInMilliseconds}`);
   } else {
-    console.warn('');
+    console.warn('Cannot refresh access token: window is not defined');
   }
 }
