@@ -37,6 +37,9 @@ yarn-error.*
 !.env.*.sample
 !.env.example
 
+# eslint
+.eslintcache
+
 # typescript
 *.tsbuildinfo
 

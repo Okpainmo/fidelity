@@ -22,14 +22,18 @@ The project includes both web and mobile clients, allowing users to interact wit
 
 ## Core Capabilities
 
-* **Multi-Chain Support** — Integrates with major blockchain ecosystems including EVM-compatible networks, Bitcoin, and Solana.
-* **Wallet Issuance** — Generate and manage deposit addresses for users across supported blockchains.
-* **Financial Ledger** — Maintain accurate user balances through an append-only ledger that records blockchain deposits and withdrawals.
-* **Deposit Monitoring** — Detect and confirm incoming blockchain transactions automatically.
-* **Withdrawal Orchestration** — Process withdrawals through a controlled transaction pipeline with retry mechanisms and status tracking.
-* **Web Client** — A browser-based interface for accessing wallets and managing digital assets.
-* **Mobile Client** — A mobile application for interacting with wallets on the go.
-* **Unified Platform Architecture** — Backend infrastructure and client applications built together to operate as a complete wallet platform.
+- **Multi-Chain Support** — Integrates with major blockchain ecosystems including EVM-compatible networks, Bitcoin, and Solana.
+
+- **Wallet Issuance** — Generate and manage deposit addresses for users across supported blockchains.
+
+- **Financial Ledger** — Maintain accurate user balances through an append-only ledger that records blockchain deposits and withdrawals.
+- **Deposit Monitoring** — Detect and confirm incoming blockchain transactions automatically.
+
+- **Withdrawal Orchestration** — Process withdrawals through a controlled transaction pipeline with retry mechanisms and status tracking.
+
+- **Web Client** — A browser-based interface for accessing wallets and managing digital assets.
+
+- **Mobile Client** — A mobile application for interacting with wallets on the go.
 
 ## Vision
 

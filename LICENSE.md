@@ -1,4 +1,4 @@
-# LICENSE 
+# LICENSE
 
 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
 <img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-555555?style=for-the-badge&logo=creativecommons&logoColor=white" alt="CC BY-NC-ND 4.0 License" />
@@ -29,6 +29,6 @@ You are **NOT allowed** to:
 
 ## Disclaimer
 
-THE CODE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.  
+THE CODE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
 
 The author(s) are not responsible for any damages or issues arising from the use of this code.
