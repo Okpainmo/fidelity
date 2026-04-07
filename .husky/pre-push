@@ -1,3 +1,14 @@
 #!/usr/bin/env sh
+set -e
 
-# run pre-push checks
+# Build the Next.js (core wallet web) app
+echo "🔍 [1/2] Building Next.js wallet app..."
+cd clients/fidelity-nextjs && bun run build
+cd - > /dev/null
+
+# Type-check the React Native app
+echo "🔍 [2/2] Type-checking React Native app..."
+cd clients/fidelity-rn && bun run tsc --noEmit
+cd - > /dev/null
+
+echo "✅ All pre-push checks passed."

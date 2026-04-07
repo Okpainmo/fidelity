@@ -1,1 +1,1 @@
-# Fidelity(Rust Server Implementations)
+# Fidelity Rust(Server) Implementations.

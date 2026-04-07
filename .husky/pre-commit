@@ -1,10 +1,9 @@
 #!/usr/bin/env sh
+set -e
 
-# run lint-staged
+# Build the Next.js (core wallet web) app
+echo "🔍 [1/1] run lint-staged on all committed files..."
 bunx --no-install lint-staged
 
-# Run lint-staged on the Next.js(raw chat api integrations demo) app
-# (cd clients/fidelity-nextjs && bunx lint-staged)
 
-# Run lint on the React Native(raw chat api integrations demo) app
-# (cd clients/fidelity-rn && bun run lint)
+echo "✅ All pre-commit checks passed."
