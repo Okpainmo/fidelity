@@ -11,7 +11,15 @@ axiosInstance.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
     if (typeof window !== 'undefined') {
       const accessToken = localStorage.getItem('accessToken');
-      const email = localStorage.getItem('email');
+      let email;
+
+      const userData = localStorage.getItem('userData');
+      // console.log(userData);
+
+      if (userData) {
+        const user = JSON.parse(userData);
+        email = user.email;
+      }
 
       if (accessToken) config.headers.Authorization = `Bearer ${accessToken}`;
       if (email) config.headers.email = email;
