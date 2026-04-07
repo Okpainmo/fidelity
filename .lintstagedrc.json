@@ -1,5 +1,5 @@
 {
-  "clients/fidelity-rn/**/*.{js,jsx,ts,tsx}": "bash -c 'cd clients/fidelity-rn && bun run lint --'",
-  "clients/fidelity-nextjs/**/*.{js,jsx,ts,tsx}": "bash -c 'cd clients/fidelity-nextjs && bun run lint --'",
+  "clients/fidelity-rn/**/*.{js,jsx,ts,tsx}": "bun run --cwd clients/fidelity-rn lint --",
+  "clients/fidelity-nextjs/**/*.{js,jsx,ts,tsx}": "bun run --cwd clients/fidelity-nextjs lint --",
   "**/*.{js,jsx,ts,tsx,css,scss,html,md,json,yml,yaml}": "bunx prettier --write"
 }

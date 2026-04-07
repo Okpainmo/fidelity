@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 
 # Build the Next.js (core wallet web) app
 echo "🔍 [1/2] Building Next.js wallet app..."
