@@ -39,6 +39,10 @@ The project includes both web and mobile clients, allowing users to interact wit
 
 Fidelity aims to provide a reliable foundation for building crypto-enabled applications by simplifying wallet infrastructure across multiple blockchains. The project focuses on creating a scalable and secure platform that combines blockchain integrations, financial accounting, and modern client applications to make digital asset management accessible and dependable at scale.
 
+## Want To Contribute?
+
+We welcome external contributions on the Fidelity project. But due to [our restrictive license](./LICENSE.md), that process comes with some caveats. Kindly read our [contributor agreement](./CONTRIBUTOR_AGREEMENT.md) to learn more.
+
 ---
 
 <p align="center">
