@@ -31,9 +31,11 @@ yarn-error.*
 *.pem
 
 # env files 
-.env.development
-.env.staging
-.env.production
+.env
+.env.*
+!.env.sample
+!.env.*.sample
+!.env.example
 
 # typescript
 *.tsbuildinfo
