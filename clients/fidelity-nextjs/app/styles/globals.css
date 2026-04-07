@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+/* reference for the new utility creation format(tailwind v4) => https://tailwindcss.com/docs/adding-custom-styles#adding-custom-utilities */
+@utility poppins {
+  font-family: var(--font-poppins);
+}
+
+@utility nunito_sans {
+  font-family: var(--font-nunito_sans);
+}
